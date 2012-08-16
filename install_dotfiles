@@ -1,0 +1,34 @@
+#!/bin/zsh
+############################
+# install_dotfiles.sh
+# This script installs the dotfiles after they are cloned from the repository.
+############################
+
+# change to the home directory
+echo "Changing to the home directory"
+cd ~
+echo "...done"
+
+########## Variables
+
+dir=~/.dotfiles                    # dotfiles directory
+olddir=~/.dotfiles_old             # old dotfiles backup directory
+files=(`ls $dir/**/*.symlink | sed "s/\(.*\/.*\/\)\(.*\)\(.symlink\)/.\2/"`)    # list of files/folders to symlink in homedir
+
+##########
+
+# create dotfiles_old in homedir
+echo "Creating $olddir for backup of any existing dotfiles in ~"
+mkdir -pv $olddir
+echo "...done"
+
+# move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
+for file in $files; do
+    echo "Moving any existing dotfiles from home to $olddir"
+    if [[ -a $file ]]
+        then mv $file $olddir
+    fi
+done
+    
+echo "Creating symlinks in home directory."
+ln -s $dir/**/*.symlink ~/ | ls *.symlink | sed -e "p;s/\(.*\).symlink/.\1/" | xargs -n2 mv

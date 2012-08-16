@@ -1,0 +1,32 @@
+# Sample gitconfig
+# Credit - https://github.com/holman/dotfiles/blob/master/git/gitconfig.symlink.example
+# This is a sample gitconfig. Usually we keep a lot of sensitive information
+# here (things like authentication tokens, email addresses, and so on), so this
+# file is ignored in this project's .gitignore.
+#
+# To set this up, rename this file to `gitconfig.symlink` and you'll be able to
+# install this to the correct location by running the project's 'install_dotfiles'
+# script.
+[user]
+        name = Joe Collins
+        email = your@example.com
+[github]
+        user = ijoecollins
+	token = your_token
+[core]
+        excludesfile = ~/.gitignore
+        editor = mate -w
+[mergetool]
+        keepBackup = false
+[alias]
+        co = checkout
+        promote = !$ZSH/bin/git-promote
+        wtf     = !$ZSH/bin/git-wtf
+        rank-contributers = !$ZSH/bin/git-rank-contributers
+        count   = !git shortlog -sn
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+[apply]
+        whitespace = nowarn
