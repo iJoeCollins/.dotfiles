@@ -21,4 +21,4 @@ alias gs='git status -sb'
 ## Many lives have been lost over commands such as these.
 ## Luckily...these will help some by "stashing" things away.
 
-alias greset! = git stash | git reset --hard
+alias greset!='git stash | git reset --hard'
