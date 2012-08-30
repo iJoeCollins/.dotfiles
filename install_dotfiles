@@ -7,7 +7,7 @@
 # change to the home directory
 echo "Changing to the home directory"
 cd ~
-echo "...done"
+
 
 ########## Variables
 
@@ -19,16 +19,21 @@ files=(`ls $dir/**/*.symlink | sed "s/\(.*\/.*\/\)\(.*\)\(.symlink\)/.\2/"`)    
 
 # create dotfiles_old in homedir
 echo "Creating $olddir for backup of any existing dotfiles in ~"
-mkdir -pv $olddir
-echo "...done"
+mkdir -p $olddir
+
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
+echo "Moving any existing dotfiles from home to $olddir"
 for file in $files; do
-    echo "Moving any existing dotfiles from home to $olddir"
     if [[ -a $file ]]
         then mv $file $olddir
     fi
 done
-    
+
+
 echo "Creating symlinks in home directory."
-ln -s $dir/**/*.symlink ~/ | ls *.symlink | sed -e "p;s/\(.*\).symlink/.\1/" | xargs -n2 mv
+ln -s $dir/**/*.symlink ~/
+ls *.symlink | sed -e "p;s/\(.*\).symlink/.\1/" | xargs -n2 mv
+
+
+echo "Success!"
