@@ -58,6 +58,9 @@ defaults write com.apple.dock wvous-tl-modifier -int 0
 defaults write com.apple.dock wvous-tr-corner -int 11
 defaults write com.apple.dock wvous-tr-modifier -int 0
 
+# Enable hidden four-fingered double tap gesture
+# Once enabled you can jump back to the most recent space used
+defaults write com.apple.dock double-tap-jump-back -bool TRUE
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
