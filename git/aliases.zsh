@@ -6,6 +6,7 @@ alias gcm='git commit -m'
 alias gcam='git commit -a -m'
 alias gm='git merge'
 alias gco='git checkout'
+alias gcl='git clone'
 alias gb='git branch'
 alias gr='git remote'
 
