@@ -105,6 +105,9 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 # Enable Disk Utility's Debug Menu
 defaults write com.apple.DiskUtility DUDebugMenuEnabled 1
 
+# Turn off hibernation [laptops only]
+# sudo pmset -a hibernatemode 0
+
 # Enable Safari’s debug menu
 #defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
