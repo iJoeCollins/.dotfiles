@@ -1,0 +1,5 @@
+## Base Excludes for S3 Static Website Development##
+.DSStore
+*.*
+# *.* excludes everything so you can selectively --include files
+# this is so you can set appropriate flag and metadata settings per file

@@ -1,0 +1,5 @@
+## Base Includes for S3 Static Website Development ##
+*.html
+*.css
+*.js
+*.ico
