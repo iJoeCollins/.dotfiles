@@ -22,7 +22,7 @@ alias s3scss="s3cmd sync --acl-public --no-preserve --cf-invalidate --exclude \"
 alias s3sjs="s3cmd sync --acl-public --no-preserve --cf-invalidate --exclude \".DS_Store\" --exclude \"*.*\" --add-header=\"Cache-Control:max-age=31536000, public\" --add-header=\"Content-Encoding:gzip\"  --mime-type=\"application/javascript\" --include \"*.js\" publish/"
 
 ## Sync Vendor JS ##
-alias s3sjs="s3cmd sync --acl-public --no-preserve --cf-invalidate --exclude \".DS_Store\" --exclude \"*.*\" --add-header=\"Cache-Control:max-age=31536000, public\" --add-header=\"Content-Encoding:gzip\"  --mime-type=\"application/javascript\" --include \"*.js\" publish/"
+alias s3svjs="s3cmd sync --acl-public --no-preserve --cf-invalidate --exclude \".DS_Store\" --exclude \"*.*\" --add-header=\"Cache-Control:max-age=31536000, public\" --add-header=\"Content-Encoding:gzip\"  --mime-type=\"application/javascript\" --include \"*.js\" publish/"
 
 ## Sync Images and Fonts##
 alias s3simg="s3cmd sync --acl-public --no-preserve --cf-invalidate --exclude \".DS_Store\" --exclude \"*.*\" --add-header=\"Cache-Control:max-age=31536000, public\" --include \"*.png\" --include \"*.jpg\" --include \"*.gif\" --include \"*.ico\" --include \"*.eot\" --include \"*.svg\" --include \"*.ttf\" --include \"*.woff\" --include \"*.otf\" publish/"
