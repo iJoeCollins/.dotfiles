@@ -30,3 +30,7 @@
         branch = auto
 [apply]
         whitespace = nowarn
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
