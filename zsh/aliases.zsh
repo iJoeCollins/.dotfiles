@@ -11,8 +11,8 @@ alias opent="open -a TextEdit"
 alias opens="open -a Safari"
 
 ## System Administrative ##
-alias show_hidden="defaults write com.apple.Finder AppleShowAllFiles TRUE && killall Finder"
-alias hide_hidden="defaults write com.apple.Finder AppleShowAllFiles FALSE && killall Finder"
+alias show_hidden="defaults write com.apple.finder AppleShowAllFiles -bool TRUE && killall Finder"
+alias hide_hidden="defaults write com.apple.finder AppleShowAllFiles -bool FALSE && killall Finder"
 
 ## Presentation ##
 alias show_desktop="defaults write com.apple.finder CreateDesktop -bool TRUE && killall Finder"
