@@ -21,10 +21,13 @@ alias glg2="git log --graph --all --format=format:'%C(blue)%h%C(reset) - %C(cyan
 
 ## Git Status Commands ##
 alias gs='git status -sb'
+alias gref='git reflog'
+alias gsl='git stash list'
 
 ## Git Destructive Commands ##
 ## WARNING! Use caution before use.
 ## Many lives have been lost over commands such as these.
 ## Luckily...these will help some by "stashing" things away.
 
-alias greset!='git stash | git reset --hard'
+# Stashes changes and runs git reset --hard
+alias gstash='git stash'
