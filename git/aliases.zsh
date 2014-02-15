@@ -10,6 +10,12 @@ alias gcob='git checkout -b'
 alias gcl='git clone'
 alias gb='git branch'
 alias gr='git remote'
+alias gra='git remote add'
+
+## Git Remotes With Github ##
+alias grag='git remote add github'
+alias gpug='git push -u github'
+alias gclg='git clone -o github'
 
 ## Git Remotes With Dropbox ##
 alias grad='git remote add dropbox' // e.g. "grad ~/Dropbox/Your/Path/Here"
