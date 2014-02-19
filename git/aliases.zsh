@@ -32,4 +32,4 @@ alias glg2="git log --graph --all --format=format:'%C(blue)%h%C(reset) - %C(cyan
 ## Git Status Commands ##
 alias gs='git status -sb'
 alias gref='git reflog'
-alias gsl='git stash list'
+alias gstl='git stash list'
