@@ -11,6 +11,8 @@ alias gcl='git clone'
 alias gb='git branch'
 alias gr='git remote'
 alias gra='git remote add'
+alias gst='git stash'
+alias gstp='git stash pop'
 
 ## Git Remotes With Github ##
 alias grag='git remote add github'
@@ -31,11 +33,3 @@ alias glg2="git log --graph --all --format=format:'%C(blue)%h%C(reset) - %C(cyan
 alias gs='git status -sb'
 alias gref='git reflog'
 alias gsl='git stash list'
-
-## Git Destructive Commands ##
-## WARNING! Use caution before use.
-## Many lives have been lost over commands such as these.
-## Luckily...these will help some by "stashing" things away.
-
-# Stashes changes and runs git reset --hard
-alias gstash='git stash'
