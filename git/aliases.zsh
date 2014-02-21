@@ -33,3 +33,4 @@ alias glg2="git log --graph --all --format=format:'%C(blue)%h%C(reset) - %C(cyan
 alias gs='git status -sb'
 alias gref='git reflog'
 alias gstl='git stash list'
+alias glst='git ls-tree --full-tree -r --name-only' // Lists all tracked files. e.g. "glst HEAD@{0}"
