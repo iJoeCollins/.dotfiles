@@ -13,6 +13,7 @@ alias gr='git remote'
 alias gra='git remote add'
 alias gst='git stash'
 alias gstp='git stash pop'
+alias gmaster='gco master; gm develop; gp; gco develop; glg;'
 
 ## Git Remotes With Github ##
 alias grag='git remote add github'
