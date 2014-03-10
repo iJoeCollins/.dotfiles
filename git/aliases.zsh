@@ -18,17 +18,13 @@ alias gmaster='gco master; gm develop; gp; gco develop; glg;'
 
 ## Git Remotes With Github ##
 _grag() {
- echo "New repo? [yn]"
- read new
  echo "Please enter the repo name:"
  read name
- if [[ $new == y* ]]; then
-    echo "Please enter a description:"
-    read description
-    echo "Creating remote repository..."
-    curl -# -u 'iJoeCollins' https://api.github.com/user/repos -d \
-    '{"name":"'$name'","description":"'$description'"}'
- fi
+ echo "Please enter a description:"
+ read description
+ echo "Creating remote repository..."
+ curl -# -u 'iJoeCollins' https://api.github.com/user/repos -d \
+ '{"name":"'$name'","description":"'$description'"}'
  echo "Adding remote to local repository..."
  git remote add origin git@github.com:iJoeCollins/$name.git
  echo "Would you like to push? [yn]"
