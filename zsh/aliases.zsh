@@ -3,13 +3,16 @@ alias reload!='. ~/.zshrc'
 ## General Directory Commands ##
 alias ~="cd ~/"
 alias ..="cd .."
+alias ...="cd ../.."
+alias l="ls -F"
+alias la="ls -aF"
 alias dotfiles="cd $ZSH"
 
+
 ## Open With ##
-alias openf="open -a Finder"
-alias opent="open -a TextEdit"
-alias opens="open -a Safari"
-alias openst="open -a Sublime\ Text\ 2"
+alias o="open ."
+alias safari="open -a Safari"
+alias s="subl ."
 
 ## System Administrative ##
 alias show_hidden="defaults write com.apple.finder AppleShowAllFiles -bool TRUE && killall Finder"
@@ -21,3 +24,8 @@ alias hide_desktop="defaults write com.apple.finder CreateDesktop -bool FALSE &&
 
 ## Mother Freakin' Star Wars In TEXT ##
 alias StarWars="telnet towel.blinkenlights.nl"
+
+## Hall of the Mountain King ##
+alias cello='say -v cellos "di di di di di di di di di di di di di di di di di di di di di di di di di di"'
+
+

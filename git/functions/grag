@@ -1,0 +1,19 @@
+# Create new git remote, add it to local repo, and optionally push
+function grag() {
+ echo "Please enter the repo name:"
+ read name
+ echo "Please enter a description:"
+ read description
+ echo "Creating remote repository..."
+ curl -# -u 'iJoeCollins' https://api.github.com/user/repos -d \
+ '{"name":"'$name'","description":"'$description'"}'
+ echo "Adding remote to local repository..."
+ git remote add origin git@github.com:iJoeCollins/$name.git
+ echo "Would you like to push? [yn]"
+ read reply
+ if [[ $reply == y* ]]; then
+    br=`git branch | grep "*"`
+    current_branch=${br/* /}
+    git push -u origin $current_branch
+ fi
+}

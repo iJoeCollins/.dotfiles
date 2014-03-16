@@ -1,4 +1,13 @@
-fpath=($ZSH/zsh/functions $fpath)
+fpath=($ZSH/**/functions $fpath)
+
+autoload -U $ZSH/**/functions/*(:t)
+
+# Colors
+export TERM=xterm-256color
+export CLICOLOR=1
+autoload colors; colors;
+export LSCOLORS="Gxfxcxdxbxegedabagacad"
+setopt PROMPT_SUBST
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000

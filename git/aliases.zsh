@@ -17,25 +17,7 @@ alias gstp='git stash pop'
 alias gmaster='gco master; gm develop; gp; gco develop; glg;'
 
 ## Git Remotes With Github ##
-_grag() {
- echo "Please enter the repo name:"
- read name
- echo "Please enter a description:"
- read description
- echo "Creating remote repository..."
- curl -# -u 'iJoeCollins' https://api.github.com/user/repos -d \
- '{"name":"'$name'","description":"'$description'"}'
- echo "Adding remote to local repository..."
- git remote add origin git@github.com:iJoeCollins/$name.git
- echo "Would you like to push? [yn]"
- read reply
- if [[ $reply == y* ]]; then
-    br=`git branch | grep "*"`
-    current_branch=${br/* /}
-    git push -u origin $current_branch
- fi
-}
-alias grag='_grag'
+##function grag creates and adds a remote repo
 alias gpug='git push -u origin'
 alias gclg='git clone -o origin'
 
