@@ -19,7 +19,8 @@ return;
 fi;
 
 # Ignore the home directory
-if [ $(git rev-parse --quiet --show-toplevel) '==' $HOME ]; then
+git_top_level=`git rev-parse --quiet --show-toplevel`
+if [ $git_top_level '==' $HOME ]; then
 return;
 fi;
 

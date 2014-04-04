@@ -16,10 +16,13 @@ alias gst='git stash'
 alias gstp='git stash pop'
 alias gmaster='gco master; gm develop; gp; gco develop; glg;'
 
-## Git Remotes With Github ##
-##function grag creates and adds a remote repo
-alias gpug='git push -u origin'
-alias gclg='git clone -o origin'
+## Git Remotes ##
+##function grag creates and adds a remote repo on github using api
+
+## Remote Origin ##
+alias grao='git remote add origin'
+alias gpuo='git push -u origin'
+alias gclo='git clone -o origin'
 
 ## Git Remotes With Dropbox ##
 alias grad='git remote add dropbox' // e.g. "grad ~/Dropbox/Your/Path/Here"
