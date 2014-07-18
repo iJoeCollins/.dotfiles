@@ -7,9 +7,6 @@
 # Enable Disk Utility's Debug Menu
 defaults write com.apple.DiskUtility DUDebugMenuEnabled 1
 
-# Add a context menu item for showing the Web Inspector in web views
-defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
-
 # Enable subpixel font rendering on non-Apple LCDs
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
 
@@ -30,6 +27,9 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Make Safari’s search banners default to Contains instead of Starts With
 defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
+
+# Add a context menu item for showing the Web Inspector in web views
+#defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # Disable the “Are you sure you want to open this application?” dialog
 #defaults write com.apple.LaunchServices LSQuarantine -bool false
