@@ -1,6 +1,9 @@
 # edit your $PATH, and don’t forget to include $PATH at the end, example $HOME/.node/bin:$PATH
 export PATH=$PATH
 
+# shortcut to this dotfiles path is $ZSH
+export ZSH=$HOME/.dotfiles
+
 # all of our zsh files
 typeset -U config_files
 config_files=($ZSH/**/*.zsh)
