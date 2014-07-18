@@ -18,7 +18,7 @@ setopt NO_LIST_BEEP
 setopt LOCAL_OPTIONS # allow functions to have local options
 setopt LOCAL_TRAPS # allow functions to have local traps
 setopt SHARE_HISTORY # share history between sessions ???
-#setopt EXTENDED_HISTORY # add timestamps to history
+setopt EXTENDED_HISTORY # add timestamps to history
 setopt CORRECT
 setopt COMPLETE_IN_WORD
 setopt IGNORE_EOF
