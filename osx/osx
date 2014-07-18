@@ -4,22 +4,14 @@
 #
 ##
 
+# Enable Disk Utility's Debug Menu
+defaults write com.apple.DiskUtility DUDebugMenuEnabled 1
 
-# Disable the “Are you sure you want to open this application?” dialog
-defaults write com.apple.LaunchServices LSQuarantine -bool false
-
-# Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+# Add a context menu item for showing the Web Inspector in web views
+defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 # Enable subpixel font rendering on non-Apple LCDs
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
-
-# Require password immediately after sleep or screen saver begins
-defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0
-
-# Show all filename extensions in Finder
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
 # Show status bar in Finder
 defaults write com.apple.finder ShowStatusBar -bool true
@@ -27,58 +19,68 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Allow text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true
 
-# Automatically open a new Finder window when a volume is mounted
-defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
-defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
-defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
-
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-
-# Enable snap-to-grid for desktop icons
-/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
-
-# Disable the warning before emptying the Trash
-defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Enable AirDrop over Ethernet and on unsupported Macs running Lion
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
-# Hot corners
-# Bottom left screen corner → Desktop
-defaults write com.apple.dock wvous-bl-corner -int 4
-defaults write com.apple.dock wvous-bl-modifier -int 0
-# Bottom right screen corner → Mission Control
-defaults write com.apple.dock wvous-br-corner -int 2
-defaults write com.apple.dock wvous-br-modifier -int 0
-# Top left screen corner → Application Windows
-defaults write com.apple.dock wvous-tl-corner -int 3
-defaults write com.apple.dock wvous-tl-modifier -int 0
-# Top right screen corner → Launchpad
-defaults write com.apple.dock wvous-tr-corner -int 11
-defaults write com.apple.dock wvous-tr-modifier -int 0
-
-# Enable hidden four-fingered double tap gesture
-# Once enabled you can jump back to the most recent space used
-defaults write com.apple.dock double-tap-jump-back -bool TRUE
-
-# Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
+# Enable snap-to-grid for desktop icons
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
 # Make Safari’s search banners default to Contains instead of Starts With
 defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
 
-# Add a context menu item for showing the Web Inspector in web views
-defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+# Disable the “Are you sure you want to open this application?” dialog
+#defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+# Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
+#defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+# Require password immediately after sleep or screen saver begins
+#defaults write com.apple.screensaver askForPassword -int 1
+#defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Show all filename extensions in Finder
+#defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Automatically open a new Finder window when a volume is mounted
+#defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
+#defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
+#defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
+
+# Disable the warning before emptying the Trash
+#defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+# Hot corners
+# Bottom left screen corner → Desktop
+#defaults write com.apple.dock wvous-bl-corner -int 4
+#defaults write com.apple.dock wvous-bl-modifier -int 0
+# Bottom right screen corner → Mission Control
+#defaults write com.apple.dock wvous-br-corner -int 2
+#defaults write com.apple.dock wvous-br-modifier -int 0
+# Top left screen corner → Application Windows
+#defaults write com.apple.dock wvous-tl-corner -int 3
+#defaults write com.apple.dock wvous-tl-modifier -int 0
+# Top right screen corner → Launchpad
+#defaults write com.apple.dock wvous-tr-corner -int 11
+#defaults write com.apple.dock wvous-tr-modifier -int 0
+
+# Enable hidden four-fingered double tap gesture
+# Once enabled you can jump back to the most recent space used
+#defaults write com.apple.dock double-tap-jump-back -bool TRUE
+
+# Automatically hide and show the Dock
+#defaults write com.apple.dock autohide -bool true
 
 # Only use UTF-8 in Terminal.app
-defaults write com.apple.terminal StringEncodings -array 4
+#defaults write com.apple.terminal StringEncodings -array 4
 
 # Make ⌘ + F focus the search input in iTunes
-defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
+#defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
 
 # Prevent Time Machine from prompting to use new hard drives as backup volume
-defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+#defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Disable menu bar transparency
 #defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
@@ -101,9 +103,6 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Show item info below desktop icons
 #/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:showItemInfo true" ~/Library/Preferences/com.apple.finder.plist
-
-# Enable Disk Utility's Debug Menu
-defaults write com.apple.DiskUtility DUDebugMenuEnabled 1
 
 # Turn off hibernation [laptops only]
 # sudo pmset -a hibernatemode 0

@@ -7,6 +7,7 @@ alias ...="cd ../.."
 alias l="ls -F"
 alias la="ls -aF"
 alias dotfiles="cd $ZSH"
+alias dh='dirs -v'
 
 
 ## Open With ##

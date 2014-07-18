@@ -4,6 +4,8 @@
 #Setup the prompt to show up as "dir$"
 #prompt="%1~$ "
 
+setopt PROMPT_SUBST
+
 parse_git_dirty() {
 if [[ -n $(git status -s --ignore-submodules=dirty 2> /dev/null) ]]; then
 echo "%{$fg[red]%}"

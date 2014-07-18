@@ -1,12 +1,5 @@
-# MacPorts Installer addition on 2011-04-09_at_23:30:31: adding an appropriate PATH variable for use with MacPorts.
-export PATH=$HOME/.node/bin:/usr/local/heroku/bin:/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-# shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
-
-# your project folder that we can `c [tab]` to
-export PROJECTS=~/Development
+# edit your $PATH, and don’t forget to include $PATH at the end, example $HOME/.node/bin:$PATH
+export PATH=$PATH
 
 # all of our zsh files
 typeset -U config_files
@@ -24,12 +17,8 @@ do
   source $file
 done
 
-# use .localrc for SUPER SECRET CRAP that you don't
-# want in your public, versioned repo.
-if [[ -a ~/.localrc ]]
-then
-  source ~/.localrc
-fi
+# super secret local config you don’t want in your repo
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -U compinit
