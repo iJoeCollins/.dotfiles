@@ -1,0 +1,5 @@
+# open wwdc video and transcripts based on year and session id
+function wwdc() { 
+	open -a safari https://developer.apple.com/videos/wwdc/$1/\?id\=$2; 
+	open -a safari http://asciiwwdc.com/$1/sessions/$2
+}
