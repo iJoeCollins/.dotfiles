@@ -14,7 +14,6 @@ alias dh='dirs -v'
 alias o="open ."
 alias safari="open -a Safari"
 alias s="subl ."
-alias sim="open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app"
 
 ## System Administrative ##
 alias show_hidden="defaults write com.apple.finder AppleShowAllFiles -bool TRUE && killall Finder"
