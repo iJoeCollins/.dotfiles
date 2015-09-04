@@ -12,6 +12,7 @@ alias dh='dirs -v'
 
 ## Open With ##
 alias o="open ."
+alias textedit="open -a TextEdit"
 alias safari="open -a Safari"
 alias s="subl ."
 
