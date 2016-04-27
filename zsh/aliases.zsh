@@ -6,6 +6,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias l="ls -F"
 alias la="ls -aF"
+alias lsn="ls -n"
 alias dotfiles="cd $ZSH"
 alias dh='dirs -v'
 
