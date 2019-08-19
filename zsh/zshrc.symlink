@@ -1,5 +1,5 @@
 # edit your $PATH, and don’t forget to include $PATH at the end, example $HOME/.node/bin:$PATH
-export PATH=~/Library/Python/3.6/bin:/Users/Joseph/Library/Python/2.7/bin:/usr/local/opt/ccache/libexec:$PATH
+export PATH=$PATH
 
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
@@ -34,7 +34,3 @@ do
 done
 
 unset config_files
-export PATH="$PATH:/Library/Frameworks/GDAL.framework/Programs"
-eval "$(rbenv init -)"
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
