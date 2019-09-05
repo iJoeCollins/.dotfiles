@@ -4,6 +4,11 @@ export PATH=$PATH
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit
+promptinit
+prompt spaceship
+
 # all of our zsh files
 typeset -U config_files
 config_files=($ZSH/**/*.zsh)
@@ -34,5 +39,3 @@ do
 done
 
 unset config_files
-
-eval "$(starship init zsh)"
