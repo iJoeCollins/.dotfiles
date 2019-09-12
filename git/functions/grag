@@ -4,11 +4,13 @@ function grag() {
  read name
  echo "Please enter a description:"
  read description
+ echo "Make repo private [true/false]:"
+ read private
  echo "Creating remote repository..."
  curl -# -u 'iJoeCollins' https://api.github.com/user/repos -d \
- '{"name":"'$name'","description":"'$description'"}'
+ '{"name":"'$name'","description":"'$description'","private":'$private'}'
  echo "Adding remote to local repository..."
- git remote add origin git@github.com:iJoeCollins/$name.git
+ git remote add origin https://github.com/iJoeCollins/$name.git
  echo "Would you like to push? [yn]"
  read reply
  if [[ $reply == y* ]]; then
