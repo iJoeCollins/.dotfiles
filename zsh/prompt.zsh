@@ -1,5 +1,3 @@
-SPACESHIP_TIME_SHOW=true
-SPACESHIP_TIME_12HR=true
 SPACESHIP_PROMPT_ORDER=(
   time          # Time stamps section
   user          # Username section
