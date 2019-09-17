@@ -1,5 +1,5 @@
 # edit your $PATH, and don’t forget to include $PATH at the end, example $HOME/.node/bin:$PATH
-export PATH=$PATH
+export PATH="/usr/local/bin:$PATH"
 
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
@@ -39,3 +39,6 @@ do
 done
 
 unset config_files
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
