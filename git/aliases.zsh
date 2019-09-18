@@ -32,7 +32,7 @@ alias gpud='git push -u dropbox' // e.g. "gpud master" sets remote branch and up
 alias gcld='git clone -o dropbox' // e.g. "gcld ~/Dropbox/Your/Path/Here" Creates local repo and sets up remote called dropbox which auto-merges with master
 
 ## Git Log Commands ##
-alias glg="git log --graph --all --oneline"
+alias glg="git log --graph --all --format='%C(auto)%h %d%Creset %C(green)%s%Creset%n%b'"
 
 ## Git Status Commands ##
 alias gs='git status -sb'
