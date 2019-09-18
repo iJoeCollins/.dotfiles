@@ -1,0 +1,29 @@
+[#00000] Subject line (max 50 chars)
+
+Why is this necessary?
+
+What was done to address the issue?
+
+What side effects does this change have?
+
+
+# 50-character subject line
+#
+# 72-character wrapped longer description.
+
+# Provide links or keys to any relevant tickets, articles or other resources
+# Example: Github issue #23
+
+# --- COMMIT END ---
+
+# --------------------
+# Remember to
+#    Capitalize the subject line
+#    Use the imperative mood in the subject line
+#    Do not end the subject line with a period
+#    Separate subject from body with a blank line
+#    Use the body to explain what and why vs. how
+#    Can use multiple lines with "-" for bullet points in body
+# --------------------
+# For more information about this template, check out
+# https://gist.github.com/adeekshith/cd4c95a064977cdc6c50
