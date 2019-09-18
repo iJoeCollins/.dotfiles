@@ -33,6 +33,7 @@ alias gcld='git clone -o dropbox' // e.g. "gcld ~/Dropbox/Your/Path/Here" Create
 
 ## Git Log Commands ##
 alias glg="git log --graph --all --format='%C(auto)%h %d%Creset %C(green)%s%Creset%n%b'"
+alias glgo="git log --oneline"
 
 ## Git Status Commands ##
 alias gs='git status -sb'
