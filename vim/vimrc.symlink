@@ -1,4 +1,5 @@
 filetype plugin on
+set mouse=a
 " Force the cursor onto a new line after 80 characters
 set textwidth=80
 " However, in Git commit messages, let’s make it 72 characters
