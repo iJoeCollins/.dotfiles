@@ -1,26 +1,13 @@
-[#00000] Subject line (max 50 chars)
-
-#Why is this necessary?
+[#00000]
 
 
-#What was done to address the issue?
-
-
-#What side effects does this change have?
-
-
-# Provide links or keys to any relevant tickets, articles or other resources
-# Example: Github issue #23
-
-
-# --- COMMIT END ---
-
-# --------------------
-# Remember to
-#    Capitalize the subject line
-#    Use the imperative mood in the subject line
-#    Do not end the subject line with a period
-#    Separate subject from body with a blank line
-#    Use the body to explain what and why vs. how
-#    Can use multiple lines with "-" for bullet points in body
-# --------------------
+# 50-character subject line w/ issue # prefix
+#
+# 72-character wrapped longer description. This should answer:
+#
+# * Why was this change necessary?
+# * How does it address the problem?
+# * Are there any side effects?
+#
+# Include full links to tickets and references if any.
+#
