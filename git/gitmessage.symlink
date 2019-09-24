@@ -1,8 +1,29 @@
-[#00000]
 
 
-# 50-character subject line w/ issue # prefix
+# Commit Specification (https://www.conventionalcommits.org/)
 #
+# <type>(#issue)!: 50-character description
+# ** LEAVE NEXT LINE BLANK **
+# 72-character wrapped longer description
+# Full links to tickets and references
+
+# For example:
+# feat(#24): Add shiny new label
+
+# ! before the colon signifies a breaking change (MAJOR bump).
+
+# Type can be:
+#    build    (changes that affect the build system)
+#    chore    (task changes etc., no production code change)
+#    ci       (changes to ci configuration files)
+#    docs     (changes to documentation)
+#    feat     (new feature; bumps MINOR semver)
+#    fix      (bug fix; bumps PATCH semver)
+#    perf     (performance improvement)
+#    refactor (refactoring; neither bug nor feature)
+#    style    (formatting, no code change)
+#    test     (adding or refactoring tests)
+
 # 72-character wrapped longer description. This should answer:
 #
 # * Why was this change necessary?
@@ -10,4 +31,7 @@
 # * Are there any side effects?
 #
 # Include full links to tickets and references if any.
-#
+
+# Start body with BREAKING CHANGE: (bumps MAJOR semver)
+# If breaking change don't forget to include ! in subject
+
